@@ -16,7 +16,8 @@ object OpenApiExtensions {
     /**
      * Serialize using default object mapper
      */
-    fun OpenApi.toJson(): String = toJson(objectMapper)
+    fun OpenApi.toJson(): String =
+        toJson(objectMapper)
 
     /**
      * Serialize using custom objectMapper
