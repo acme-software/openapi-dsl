@@ -1,6 +1,8 @@
 OpenApi DSL
 ===========
 
+[![Build Status](https://travis-ci.org/acme-software/openapi-dsl.svg?branch=master)](https://travis-ci.org/acme-software/openapi-dsl)
+
 **A multi platform DSL / library to build and maintain [open-api](https://www.openapis.org/) (a.k.a. 
 [Swagger](https://swagger.io/)) specifications in [Kotlin](#kotlin-dsl), [Java](#java-dsl), [Scala](#scala-dsl) and 
 [JS](#javascript-dsl)**
@@ -18,9 +20,11 @@ if absolutely needed of if there is no high level DSL for the desired target lan
 Kotlin DSL
 ----------
 
-Kotlin uses an idiomatic builder DSL to get stuff done. A little example:
+Kotlin uses an idiomaticm, typesafe builder DSL to get stuff done. A little example:
 
 ```kotlin
+import ch.acmesoftware.openapidsl.kotlin.v3.*
+
 val api: OpenApi = openApi {
     info("Example API Doc", "1.0.0") {
         description = "Lorem Ipsum Dolor si amet..."
@@ -78,6 +82,24 @@ val res: String = OpenApi(
         version = "1.0.0"
     )
 ).toJson()
+```
+
+Serializers
+-----------
+
+The OpenApi spec can be serrialized to JSON using one of the following serializers:
+
+### Jackson
+
+Requires `openapi-dsl-jackson`
+
+```kotlin
+import ch.acmesoftware.openapidsl.kotlin.v3.*
+import ch.acmesoftware.openapidsl.jackson.OpenApiExtensions.toJson
+
+openApi {
+    info("Minial Example", "1.0.0")
+}.toJson()
 ```
 
 Misc
