@@ -20,7 +20,7 @@ if absolutely needed of if there is no high level DSL for the desired target lan
 Kotlin DSL
 ----------
 
-Kotlin uses an idiomaticm, typesafe builder DSL to get stuff done. A little example:
+Kotlin uses an idiomatic, typesafe builder DSL to get stuff done. A little example:
 
 ```kotlin
 import ch.acmesoftware.openapidsl.kotlin.v3.*
