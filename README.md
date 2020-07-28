@@ -3,9 +3,9 @@ OpenApi DSL
 
 [![Build Status](https://travis-ci.org/acme-software/openapi-dsl.svg?branch=master)](https://travis-ci.org/acme-software/openapi-dsl)
 
-**A multi platform DSL / library to build and maintain [open-api](https://www.openapis.org/) (a.k.a. 
+OpenApi DSL is a typesafe multi platform DSL / library to build [open-api](https://www.openapis.org/) (a.k.a. 
 [Swagger](https://swagger.io/)) specifications in [Kotlin](#kotlin-dsl), [Java](#java-dsl), [Scala](#scala-dsl) and 
-[JS](#javascript-dsl)**
+[JS](#javascript-dsl)
 
 ***Heads up:** This library is still "work in progress" and by no means production-ready. Feel free to issue pull 
 requests ;)*
