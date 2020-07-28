@@ -19,9 +19,7 @@ kotlin {
         jvm().compilations["test"].defaultSourceSet {
             dependencies {
                 implementation(kotlin("test"))
-                implementation(kotlin("test-junit5"))
-                implementation("io.kotlintest:kotlintest-runner-junit5:3.3.2")
-                runtimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.2")
+                implementation(kotlin("test-junit"))
                 implementation("com.networknt:json-schema-validator:1.0.42")
             }
         }
