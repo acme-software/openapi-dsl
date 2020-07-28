@@ -5,7 +5,7 @@ OpenApi DSL
 
 OpenApi DSL is a typesafe multi platform library to build [open-api](https://www.openapis.org/) (a.k.a. 
 [Swagger](https://swagger.io/)) specifications in [Kotlin](#kotlin-dsl), [Java](#java-dsl), [Scala](#scala-dsl) and 
-[JS](#javascript-dsl)
+[JavaScript](#javascript-dsl)
 
 ***Heads up:** This library is still "work in progress" and by no means production-ready. Feel free to issue pull 
 requests ;)*
