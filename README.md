@@ -2,7 +2,8 @@ OpenApi DSL
 ===========
 
 **A multi platform DSL / library to build and maintain [open-api](https://www.openapis.org/) (a.k.a. 
-[Swagger](https://swagger.io/) specifications in [Kotlin](#kotlin), [Java](#java), [Scala](#scala) and [JS](#javascript)**
+[Swagger](https://swagger.io/)) specifications in [Kotlin](#kotlin-dsl), [Java](#java-dsl), [Scala](#scala-dsl) and 
+[JS](#javascript-dsl)**
 
 ***Heads up:** This library is still "work in progress" and by no means production-ready. Feel free to issue pull 
 requests ;)*
@@ -44,14 +45,14 @@ val api: OpenApi = openApi {
 Java DSL
 --------
 
-
+TBD...
 
 Scala DSL
 ---------
 
 Idiomatic Scala support still needs some time...
 
-Until then, you can basically just use the Java API, because it's pure ;)
+Until then, you can basically just use the Java DSL, because it's pure ;)
 
 JavaScript DSL
 --------------
@@ -63,7 +64,7 @@ Low Level DSL
 
 The term "low level DSL" means the simplest underlying AST (object structure) which basically represents the OpenApi 
 specification. It is possible, but in rare conditions useful, to construct the object-tree by hand. However, these 
-structures are used to generate and parse openapi JSON or YML definitions. All higher DSL levels are building upon this.
+structures are used to generate and parse OpenApi JSON or YML definitions. All high level DSLs are building upon this.
 
 Minimal Example using the low level DSL:
 
