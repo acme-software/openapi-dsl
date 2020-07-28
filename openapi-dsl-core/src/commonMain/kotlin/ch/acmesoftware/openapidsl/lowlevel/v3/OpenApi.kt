@@ -9,7 +9,7 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class OpenApi(
-    val openapi: String = "3.0.3",
+    val openapi: String = defaultVersion,
     val info: Info,
     val servers: List<Server> = emptyList(),
     val paths: Map<String, PathItem> = emptyMap(),
@@ -17,4 +17,8 @@ data class OpenApi(
     val security: List<SecurityRequirement> = emptyList(),
     val tags: List<Tag> = emptyList(),
     val externalDocs: ExternalDocumentation? = null
-)
+) {
+    companion object {
+        const val defaultVersion = "3.0.3"
+    }
+}
