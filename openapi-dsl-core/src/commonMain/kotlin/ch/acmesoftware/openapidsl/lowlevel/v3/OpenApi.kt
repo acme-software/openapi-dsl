@@ -15,6 +15,6 @@ data class OpenApi(
     val paths: Map<String, PathItem> = emptyMap(),
     val components: Components? = null,
     val security: List<SecurityRequirement> = emptyList(),
-    val tags: List<Tag>,
-    val externalDocs: ExternalDocumentation?
+    val tags: List<Tag> = emptyList(),
+    val externalDocs: ExternalDocumentation? = null
 )

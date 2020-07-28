@@ -1,3 +1,4 @@
 rootProject.name = "openapi-dsl"
 
-include("core")
+include("openapi-dsl-core")
+include("openapi-dsl-jackson")

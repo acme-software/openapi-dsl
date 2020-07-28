@@ -9,13 +9,13 @@ import kotlinx.serialization.Serializable
 data class Server(
     val url: String,
     val description: String? = null,
-    val variables: Map<String, ServerVariable> = emptyMap()
+    val variables: Map<String, Variable> = emptyMap()
 ) {
     /**
      * @see [https://swagger.io/specification/#server-variable-object]
      */
     @Serializable
-    data class ServerVariable(
+    data class Variable(
         val enum: List<String> = emptyList(),
         val default: String,
         val description: String? = null
